@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-size: 18px;
+    background-color: #eeeeee;
+}
+
+.kdu_logo {
+    padding-bottom: 10px;
+}
+
+.stacklist .list-heading {
+    font-size: 1.4em;
+}
+
+.stack-list-items {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+}
+
+.stack-list-items ul li {
+    padding: 5px;
+}
+
+.quote {
+    padding: 10px;
+}
