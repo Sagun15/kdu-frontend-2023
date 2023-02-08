@@ -1,0 +1,238 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+header {
+  background-color: #5f9ea0;
+  position: relative;
+}
+
+header p {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+#navigation-bar {
+  display: inline-block;
+  width: calc(100% - 210px);
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navigation-bar-item,
+.search-bar {
+  display: inline-block;
+  padding: 10px;
+}
+
+.navigation-bar-item > a {
+  text-decoration: none;
+}
+
+.navigation-bar-item:hover {
+  background-color: #d4d9e6;
+}
+
+.active {
+  background-color: #d4d9e6;
+}
+
+.main-footer {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #d4d9e6;
+  text-align: center;
+}
+
+.main-footer .tnc {
+    width: 100%;
+    overflow: auto;
+}
+
+/* Index.html */
+.container {
+    display: flex;
+    margin: 1%;
+}
+
+.founders-list {
+    width: 75%;
+    margin-right: 1%;
+}
+
+.intro-section {
+  /* width: 70%;
+  margin: auto; */
+  background-color: #eee;
+}
+
+.intro-section-heading {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.intro-left-section {
+  width: 15%;
+  float: left;
+  padding: 10px;
+}
+
+.intro-left-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.intro-right-section {
+  width: 85%;
+  float: right;
+  padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.updates-list {
+    width: 23%;
+    background-color: #eee;
+}
+
+.updates-list-heading {
+    text-align: center;
+    font-size: x-large;
+}
+
+aside {
+    padding-left: 15px;
+    margin: 15px;
+    float: right;
+    font-style: italic;
+  }
+
+/* Registration_login.html */
+
+#form-container {
+  text-align: center;
+}
+
+#form-container form {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: #eee;
+}
+
+#form-container form table {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+table + div input {
+  padding: 10px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.input-choice label {
+  margin-right: 15px;
+}
+
+#control-btns {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* About.html */
+.about-section,
+.vision-section,
+.quote {
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.section-heading {
+  font-size: xx-large;
+  padding-bottom: 5px;
+}
+
+.quote {
+    background-color: #c4c1c1;
+}
+
+.quote blockquote p {
+  padding: 15px;
+  background: #c4c1c1;
+  border-radius: 5px;
+}
+
+.quote blockquote p::before {
+  content: "\201C";
+}
+
+.quote blockquote p::after {
+  content: "\201D";
+}
+
+.quote .quote-caption {
+  text-align: right;
+}
+
+/* Careers.html */
+.careers-intro,
+.careers-openings {
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.careers-intro-heading {
+  font-size: xx-large;
+}
+
+.careers-intro .careers-intro-items {
+  padding: 2px 35px;
+}
+
+.careers-openings-heading {
+  margin-top: 10px;
+  font-size: x-large;
+}
+
+.careers-openings-item p {
+  display: inline-block;
+  box-sizing: content-box;
+}
+
+.careers-openings-items {
+  padding-top: 10px;
+}
+
+.careers-openings-item p:nth-child(odd) {
+  width: 70%;
+}
+
+.careers-openings-item p:nth-child(even) {
+  text-align: right;
+  width: 25%;
+}

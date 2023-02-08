@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Registration</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <p><s>Homo</s>TechSapien</p>
+      <nav id="navigation-bar">
+        <ul class="navigation-bar-items">
+          <li class="navigation-bar-item"><a href="../index.html">Home</a></li>
+          <li class="navigation-bar-item">
+            <a href="./about.html">About Us</a>
+          </li>
+          <li class="navigation-bar-item">
+            <a href="./careers.html">Careers</a>
+          </li>
+          <li class="navigation-bar-item active">
+            <a target="_self" href="./register_login.html">Register / Login</a>
+          </li>
+          <li class="search-bar">
+            <input type="search" placeholder="Search..." />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <img
+        src="../images/header.jpg"
+        alt="Organization image"
+        width="100%"
+        height="550px"
+      />
+    </div>
+    <main>
+      <div id="form-container">
+        <form>
+          <h2 class="form-heading"><u>Registration</u></h2>
+          <table>
+            <tr>
+              <td><label for="username">Username</label></td>
+              <td>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                  class="input-field"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@mail.in"
+                  class="input-field"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="telephone">Telephone Number</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="0xxxx-98765"
+                  class="input-field"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="XXXXXX"
+                  class="input-field"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="confirm_password">Confirm Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  id="confirm_password"
+                  name="confirm_password"
+                  placeholder="XXXXXX"
+                  class="input-field"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="state">State</label></td>
+              <td>
+                <select name="state" id="state" class="form-control">
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Andaman and Nicobar Islands">
+                    Andaman and Nicobar Islands
+                  </option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Dadar and Nagar Haveli">
+                    Dadar and Nagar Haveli
+                  </option>
+                  <option value="Daman and Diu">Daman and Diu</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Lakshadweep">Lakshadweep</option>
+                  <option value="Puducherry">Puducherry</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="qualification">Qualification</label></td>
+              <td class="input-choice">
+                <input type="radio" id="BE" name="qualification" value="BE" />
+                <label for="BE">BE</label>
+                <input
+                  type="radio"
+                  id="btech"
+                  name="qualification"
+                  value="Btech"
+                />
+                <label for="btech">Btech</label>
+                <input type="radio" id="BA" name="qualification" value="BA" />
+                <label for="BA">BA</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="graduate_year">Graduation year</label></td>
+              <td class="input-choice">
+                <input
+                  type="radio"
+                  id="year_2021"
+                  name="graduate_year"
+                  value="2021"
+                />
+                <label for="year_2021">2021</label>
+                <input
+                  type="radio"
+                  id="year_2022"
+                  name="graduate_year"
+                  value="2022"
+                />
+                <label for="year_2022">2022</label>
+                <input
+                  type="radio"
+                  id="year_2023"
+                  name="graduate_year"
+                  value="2023"
+                />
+                <label for="year_2023">2023</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="skills">Skills</label></td>
+              <td class="input-choice">
+                <input type="checkbox" id="cpp" name="skills" value="cpp" />
+                <label for="cpp">C++</label>
+                <input type="checkbox" id="java" name="skills" value="java" />
+                <label for="java">Java</label>
+                <input
+                  type="checkbox"
+                  id="python"
+                  name="skills"
+                  value="python"
+                />
+                <label for="python">Python</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="years_of_experience">Years Of Experience</label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="years_of_experience"
+                  name="years_of_experience"
+                  placeholder="1"
+                  class="input-field"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="documents">Registered Govt. Documents</label></td>
+              <td class="input-choice">
+                <input
+                  type="checkbox"
+                  id="aadhar_card"
+                  name="documents"
+                  value="aadhar_card"
+                />
+                <label for="aadhar_card">Aadhar Card</label>
+                <input
+                  type="checkbox"
+                  id="pan_card"
+                  name="documents"
+                  value="pan_card"
+                />
+                <label for="pan_card">Pan Card</label>
+                <input type="checkbox" id="bpl" name="documents" value="bpl" />
+                <label for="bpl">BPL Card</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="additional"
+                  >Additional Details
+                  <i><span style="color: gray">(Optional)</span></i></label
+                >
+              </td>
+              <td>
+                <textarea
+                  id="additional"
+                  name="additional"
+                  rows="5"
+                  cols="50"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+          <div id="control-btns">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" /><br />
+            <p>
+              <strong>Note: </strong>After you <code>submit</code> your details,
+              our team will review your application and respond back as soon as
+              possible
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="main-footer">
+        <div id="tnc">
+            <pre>This site is   🫀   Enjoy!!.</pre>
+        </div>
+      <p>&copy; Copyright - All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
