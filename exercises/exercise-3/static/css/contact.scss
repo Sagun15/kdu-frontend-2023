@@ -1,0 +1,63 @@
+@import "./style.scss";
+
+main {
+  background-color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  padding: 5em 0;
+  width: 60%;
+  margin: auto;
+  .contact-img-section {
+    width: 50%;
+    .contact-img-heading {
+      font-size: 3.2em;
+    }
+    .logo-description {
+      padding: 1em 0;
+      line-height: 1.6;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .contact-form {
+    width: 50%;
+    .contact-fields {
+      margin: auto;
+      display: grid;
+      grid-gap: 1em;
+      padding: 0 2em;
+      input,
+      textarea {
+        padding: 1em 2em;
+        background-color: $background-color;
+        width: 80%;
+        outline: none;
+        border: none;
+      }
+      .send-btn {
+        padding: 1em 1.5em;
+        width: min-content;
+        background-color: #000;
+        color: $background-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 786px) and (max-height: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    .contact-img-section {
+      width: 100%;
+      .contact-img-heading {
+        font-size: 1em;
+      }
+    }
+    .contact-form {
+      width: 100%;
+    }
+  }
+}
