@@ -1,7 +1,10 @@
 // 1. Tip Calculator
 console.log("Output for 1st");
 function tipCalculator(bill) {
-  if (bill < 50) {
+  if (typeof bill !== "number") {
+    console.error("Please pass a valid number");
+    return;
+  } else if (bill < 50) {
     return 0.2 * bill;
   } else if (bill >= 50 && bill <= 200) {
     return 0.15 * bill;
@@ -10,7 +13,7 @@ function tipCalculator(bill) {
   }
 }
 
-const bills = [140, 45, 280];
+const bills = ["140", 45, 280];
 
 let tipArray = bills.map((bill) => {
   return tipCalculator(bill);
@@ -35,6 +38,10 @@ const days = [
   "Saturday    ",
 ];
 let trimmedArray = days.map((day) => {
+  if (typeof day !== "string") {
+    console.error("Not a valid string");
+    return "Not a valid string";
+  }
   return day.trim().substring(0, 3).toUpperCase();
 });
 
@@ -42,13 +49,17 @@ console.log(trimmedArray);
 
 // 2. b) Coded Version
 const codedFunction = (input) => {
+  if (typeof input !== "string") {
+    console.error("Not a valid string");
+    return "Not a valid string";
+  }
   return input
     .trim()
     .replace(/a/g, "4")
     .replace(/e/g, "3")
     .replace(/i/g, "1")
     .replace(/o/g, "0")
-    .replace(/u/g, "5");
+    .replace(/s/g, "5");
 };
 
 console.log("Output: ", codedFunction("javascript is cool"));
@@ -100,16 +111,29 @@ console.log("Warehouse Array: ", warehouseArray);
 // 3. b)
 let totalPrice = 0;
 warehouseArray.forEach((item) => {
+  if (typeof item.price !== "number") {
+    console.error("Not a valid price");
+    return;
+  }
   totalPrice += item.price;
 });
 console.log("Total Price: ", totalPrice);
 
 // 3. c)
-warehouseArray.sort((item1, item2) => item2.price - item1.price);
+warehouseArray.sort((item1, item2) => {
+  if (typeof item1 !== null || typeof item2 !== null) {
+    console.error("Not a valid item: ", item1, item2);
+  }
+  item2.price - item1.price;
+});
 console.log("Sorted Warehouse: ", warehouseArray);
 
 // 3. d)
 blueProducts = warehouseArray.filter((item) => {
+  if (typeof item.color !== "string") {
+    console.error("Not a valid color for item: ", item);
+    return "Not a valid color";
+  }
   return item.color.toLowerCase() === "blue";
 });
 console.log("BlueProducts Array: ", blueProducts);
@@ -117,7 +141,13 @@ console.log("BlueProducts Array: ", blueProducts);
 // 4.
 console.log("\n\n\nOutput for 4th");
 // 4. a)
-const convertToJSON = (inputObjectAsString) => JSON.parse(inputObjectAsString);
+const convertToJSON = (inputObjectAsString) => {
+  if (typeof inputObjectAsString !== "string") {
+    console.error("Not a valid string");
+    return "Not a valid string";
+  }
+  JSON.parse(inputObjectAsString);
+};
 let jsonObject = convertToJSON(
   '{"firstName":"Alex","lastName":"Hunter","email":"alex@yahoo.com","age \
 ":24, "city":"london", "country":"england"}'
