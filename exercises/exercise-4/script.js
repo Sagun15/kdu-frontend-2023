@@ -13,7 +13,7 @@ function tipCalculator(bill) {
   }
 }
 
-const bills = ["140", 45, 280];
+const bills = [140, 45, 280];
 
 let tipArray = bills.map((bill) => {
   return tipCalculator(bill);
