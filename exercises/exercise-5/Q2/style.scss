@@ -1,0 +1,31 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+#container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  #image-input-section {
+    display: none;
+    #image-input {
+      width: 40vw;
+      padding: 1em 0.5em;
+      border: none;
+      outline: none;
+      background-color: #f4f4f4;
+    }
+    #load-img {
+        padding: 1em 0.5em;
+    }
+  }
+  #load-btn {
+    margin-top: 1em;
+    padding: 1em;
+  }
+  #img-section {
+    display: none;
+    margin: auto;
+  }
+}

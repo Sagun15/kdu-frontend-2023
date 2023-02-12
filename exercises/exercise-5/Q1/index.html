@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <main class="container">
+      <h1 class="heading">ToDo List</h1>
+      <div class="add-todo">
+        <input id="add-todo-text" type="text" placeholder="Add todo..." />
+        <input id="add-todo-submit" type="submit" value="Add" />
+      </div>
+      <div id="todo-items">
+        <div id="todo-item-section-1" class="todo-item-section">
+          <p id="todo-item-1" class="todo-item">Reading novel</p>
+          <div class="todo-ctrl-btns">
+            <input
+              id="edit-btn-1"
+              class="edit-btn"
+              type="button"
+              value="Edit"
+              onclick="editTodo(this.id)"
+            />
+            <input
+              id="remove-btn-1"
+              class="remove-btn"
+              type="button"
+              value="Remove"
+              onclick="removeTodo(this.id)"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./todo.js" defer></script>
+  </body>
+</html>
