@@ -1,0 +1,483 @@
+@import "./colors.scss";
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif;
+}
+
+#navbar {
+  width: 80%;
+  height: 5em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr 1fr;
+  align-items: center;
+  align-content: center;
+  .nav-link {
+    text-decoration: none;
+    color: #000;
+  }
+  #book-cleaning-btn {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 0.5em 1em;
+    text-align: center;
+    border-radius: 0.4em;
+  }
+  .hamburger {
+    display: none;
+    .hamburger-icon {
+      width: 2em;
+    }
+  }
+}
+
+#container {
+  #intro {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../images/landing-img.jpeg");
+    background-size: 1em;
+    min-height: 45em;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #intro-heading {
+      font-size: 3em;
+      font-weight: 600;
+      color: $secondary-color;
+    }
+    #intro-description {
+      color: $secondary-color;
+      font-size: 1.1em;
+      text-align: center;
+      line-height: 1.4;
+      margin: 1em 0 2em 0;
+      #intro-line1::after {
+        content: "\a";
+        white-space: pre;
+      }
+    }
+    .contact {
+      width: 40%;
+      display: grid;
+      grid-template-columns: 50% 20% 30%;
+      .contact-field {
+        padding: 1em 0.8em;
+        border: 0.1em solid $secondary-color;
+        outline: none;
+      }
+      .contact-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        border: 0.1em solid $primary-color;
+        color: $secondary-color;
+        font-size: 1.1em;
+        .arrow {
+          width: 0.8em;
+          height: 0.7em;
+        }
+      }
+      .contact-btn:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #tech-partners {
+    padding: 1em;
+    margin: auto;
+    border-bottom: 0.2em solid $border-color;
+    background-color: $secondary-background-color;
+    #tech-partners-tagline {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 550;
+      color: $ternary-color;
+      padding-bottom: 1em;
+    }
+    #client-logos {
+      display: flex;
+      justify-content: center;
+      .client-logo {
+        width: 10em;
+      }
+    }
+  }
+
+  #features {
+    width: 80%;
+    margin: auto;
+    padding: 4em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    #features-headline {
+      grid-column: 1 / 4;
+      font-size: 2em;
+      .features-underline-design {
+        color: $primary-color;
+        border-bottom: 0.1em solid $primary-color;
+      }
+    }
+    #features-description {
+      grid-column: 1 / 4;
+      padding: 1.5em 0;
+      color: $ternary-color;
+      font-size: 600;
+    }
+    .feature {
+      height: fit-content;
+      padding-top: 2em;
+      .feature-icon {
+        width: 5em;
+        filter: $filter;
+      }
+      .feature-title {
+        padding-top: 2em;
+        font-weight: bold;
+      }
+      .feature-description {
+        padding-top: 0.5em;
+        color: $ternary-color;
+      }
+    }
+  }
+
+  #review-section {
+    background-color: $secondary-color;
+    #reviews {
+      width: 80%;
+      margin: auto;
+      padding: 4em 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 1em;
+      text-align: center;
+      #reviews-headline {
+        grid-column: 1 / 4;
+        font-size: 2em;
+        .review-underline-design {
+          color: $primary-color;
+          border-bottom: 0.1em solid $primary-color;
+        }
+      }
+      #reviews-description {
+        grid-column: 1 / 4;
+        padding: 1.5em 0;
+        color: $ternary-color;
+        font-size: 600;
+      }
+      .review {
+        height: fit-content;
+        padding-top: 2em;
+        .review-description {
+          display: grid;
+          justify-items: center;
+          background-color: $review-background;
+          padding: 1em;
+          color: $ternary-color;
+          border: 0.1em solid $primary-color;
+          .review-icon {
+            width: 1em;
+            padding-bottom: 1em;
+            filter: $filter;
+          }
+        }
+        .pointer {
+          height: 2em;
+          width: 2em;
+          background: $review-background;
+          margin: auto;
+          transform: rotate(45deg);
+          margin-top: -1em;
+          border-bottom: 1px solid $primary-color;
+          border-right: 1px solid $primary-color;
+        }
+        .review-author {
+          padding-top: 2em;
+          font-weight: bold;
+        }
+        .review-author-designation {
+          padding-top: 0.5em;
+          color: $ternary-color;
+        }
+      }
+    }
+  }
+
+  #services-section {
+    #services-headline {
+      padding: 0.8em 0;
+      font-size: 2em;
+      background-color: $primary-color;
+      color: $secondary-color;
+      text-align: center;
+      #service-underline-design {
+        border-bottom: 0.1em solid $secondary-color;
+      }
+    }
+    .services {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      .service-img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+      }
+      .service-specifications {
+        margin: 4em;
+        display: grid;
+        justify-content: left;
+        align-items: center;
+        align-content: center;
+        .service-specifications-headline {
+          font-size: 1.7em;
+          .service-specifications-underline {
+            color: $primary-color;
+            border-bottom: 0.1em solid $primary-color;
+          }
+        }
+        .check-mark {
+          width: 1em;
+          filter: $filter;
+        }
+        .service-specifications-headline {
+          padding-left: 0.5em;
+        }
+        .service-specifications-description {
+          border-spacing: 1em;
+          color: $ternary-color;
+        }
+      }
+      .right-service-specification {
+        justify-content: right;
+      }
+    }
+  }
+
+  #contact-us {
+    display: flex;
+    min-height: 20em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-background-color;
+    border-top: 0.1em solid $border-color;
+    #contact-us-heading {
+      font-size: 2.8em;
+      text-align: center;
+    }
+    #contact-us-description {
+      color: $ternary-color;
+      padding: 2em 0;
+      line-height: 1.6;
+      text-align: center;
+      #description-line1::after {
+        content: "\a";
+        white-space: pre;
+      }
+    }
+    .contact-us-details {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 50% 20% 30%;
+      .contact-field {
+        padding: 1em 0.8em;
+        border: 0.1em solid $secondary-color;
+        outline: none;
+      }
+      .contact-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        border: 0.1em solid $primary-color;
+        color: $secondary-color;
+        font-size: 1.1em;
+        .arrow {
+          width: 0.8em;
+          height: 0.7em;
+        }
+      }
+      .contact-btn:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#footer-bar {
+  background-color: $primary-color;
+  color: $secondary-color;
+  #footer-section {
+    width: 80%;
+    height: inherit;
+    margin: auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.1em solid #2badbe;
+    #quick-links,
+    #legal-stuff,
+    #locations,
+    #social-links {
+      display: inherit;
+      flex-direction: column;
+      line-height: 1.5;
+      .footer-links-section {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        padding: 1em 0;
+      }
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+      }
+    }
+    #social-links {
+      #email-contact {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        background-color: #168d9b;
+        justify-content: center;
+        align-content: center;
+        .contact-field {
+          border: 0.2em solid #168d9b;
+          outline: #168d9b;
+        }
+        .contact-field:hover {
+          cursor: pointer;
+        }
+      }
+      #social-media-links {
+        margin-top: 0.8em;
+        display: inherit;
+        align-items: center;
+        .social-media-link {
+          width: 1em;
+          background-color: $social-links-background;
+          filter: invert(89%) sepia(9%) saturate(746%) hue-rotate(150deg)
+          brightness(90%) contrast(81%);
+          padding: 0.6em;
+          border-radius: 1em;
+          margin-right: 0.4em;
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    padding: 2em;
+  }
+  ::placeholder {
+    color: $primary-color;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  #navbar {
+    grid-template-columns: 8fr 1fr;
+    .nav-link {
+      display: none;
+    }
+    .hamburger {
+      display: grid;
+      justify-self: flex-end;
+    }
+  }
+
+  #container {
+    #intro {
+      background-size: cover;
+      background-position: left;
+      #intro-heading {
+        text-align: center;
+        font-size: 2em;
+      }
+      #intro-description {
+        #intro-line1::after {
+          content: " ";
+          white-space: pre;
+        }
+      }
+      .contact {
+        width: 80%;
+        grid-template-columns: 100%;
+        grid-row-gap: 0.8em;
+        .contact-btn {
+          font-size: 1em;
+        }
+      }
+    }
+
+    #tech-partners {
+      #client-logos {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    #features {
+      grid-template-columns: 100%;
+      #features-headline,
+      #features-description {
+        grid-column: 1 / 1;
+      }
+    }
+
+    #review-section {
+      #reviews {
+        grid-template-columns: 100%;
+        #reviews-headline,
+        #reviews-description {
+          grid-column: 1 / 1;
+        }
+        .review {
+          .review-author {
+            padding-top: 1em;
+          }
+        }
+      }
+    }
+
+    #services-section {
+      .services {
+        grid-template-columns: 100%;
+        .service-specifications {
+          margin: 2em;
+        }
+        .right-service-specification {
+          justify-content: left;
+        }
+      }
+    }
+
+    #contact-us {
+      padding: 2em 0;
+      .contact-us-details {
+        grid-template-columns: 100%;
+        grid-row-gap: 0.8em;
+      }
+    }
+  }
+  #footer-bar {
+    #footer-section {
+      flex-direction: column;
+      #social-links {
+        #email-contact {
+          grid-template-columns: 90% 10%;
+          .send-email-btn {
+            justify-self: center;
+          }
+        }
+      }
+    }
+  }
+}
