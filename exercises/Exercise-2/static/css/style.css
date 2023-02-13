@@ -1,0 +1,127 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header .heading {
+  background-color: #ff7f51;
+  padding: 15px 0 15px 10%;
+  color: #f4f4f4;
+}
+
+#navigation-bar {
+  background-color: #333333;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#navigation-bar .navigation-bar-items {
+  padding: 10px 0 10px 10%;
+}
+
+#navigation-bar .navigation-bar-items .navigation-bar-item {
+  color: #f4f4f4;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1.2em;
+}
+
+#navigation-bar .navigation-bar-items .navigation-bar-item:first-child {
+  padding-left: 0;
+}
+
+header .header-image {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+header .header-image img {
+  transform: scale(2.5);
+  position: relative;
+  right: 50%;
+}
+
+#showcase-image {
+  object-fit: fill;
+  object-position: left;
+}
+
+header .header-image .header-image-heading {
+  position: absolute;
+  color: #f4f4f4;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: #eee;
+  font-size: 1.2em;
+}
+
+.container {
+  width: 80%;
+  margin: 1% auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container .welcome-note {
+  display: inline-block;
+  text-align: justify;
+  width: 70%;
+  padding-right: 1%;
+  box-sizing: border-box;
+}
+
+.container .welcome-note .welcome-note-description {
+  padding-top: 20px;
+  line-height: 1.6;
+}
+
+.container .sidebar {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #333333;
+  color: #f4f4f4;
+  box-sizing: border-box;
+  padding: 25px 10px;
+  width: 30%;
+}
+
+@media only screen and (min-width: 1920px) and (min-height: 1080px) {
+    .container .welcome-note {
+      font-size: 1.8em;
+    }
+  
+    .container .sidebar {
+      font-size: 1.5em;
+    }
+  }
+
+@media only screen and (max-width: 786px) and (max-height: 1024px) {
+  .container .welcome-note {
+    width: 100%;
+  }
+
+  .container .sidebar {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.main-footer {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #333333;
+  color: #f4f4f4;
+  text-align: center;
+}
