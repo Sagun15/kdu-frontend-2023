@@ -351,9 +351,16 @@
         .contact-field {
           border: 0.2em solid #168d9b;
           outline: #168d9b;
+          padding: 0.2em 0.1em;
         }
         .contact-field:hover {
           cursor: pointer;
+        }
+        .send-email-btn img {
+          display: flex;
+          flex-direction: column;
+          width: 1.5rem;
+          height: 1.5rem;
         }
       }
       #social-media-links {
@@ -381,7 +388,7 @@
   }
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 486px) {
   #navbar {
     grid-template-columns: 8fr 1fr;
     .nav-link {
