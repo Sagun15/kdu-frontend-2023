@@ -1,0 +1,84 @@
+@import "./style.scss";
+
+.about-container {
+  width: 80%;
+  margin: auto;
+  .intro {
+    .title-intro {
+      text-transform: uppercase;
+      padding: 2em 0;
+    }
+    .title {
+      font-size: 4em;
+    }
+    .intro-description {
+      width: 60%;
+      padding: 2em 0;
+      line-height: 1.6;
+    }
+    .img-caption {
+      padding-bottom: 2em;
+    }
+  }
+  .domains {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-gap: 1rem;
+    margin-bottom: 6rem;
+    .domain {
+      padding: 2em;
+      background-color: #fff;
+      box-shadow: 0.2em 0.6em 0.2em $box-shadow-color;
+      .domain-img {
+        width: 5em;
+        height: 5em;
+      }
+      .more {
+        text-decoration: underline;
+        text-transform: uppercase;
+        padding-top: 15px;
+        font-weight: 550;
+      }
+    }
+    .graphic-design {
+      border-bottom: 0.6rem solid $header-color;
+    }
+    .web-design {
+      border-bottom: 0.6rem solid $web-design-border;
+    }
+    .software {
+      border-bottom: 0.6rem solid $software-border;
+    }
+    .application {
+      border-bottom: 0.6rem solid $application-border;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) and (max-height: 1024px) {
+  .about-container {
+    .intro {
+      .intro-description {
+        width: 100%;
+        padding: 2em 0;
+      }
+    }
+    .domains {
+      grid-template-columns: repeat(2, 49%);
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .about-container {
+    .intro {
+      .intro-description {
+        width: 100%;
+        padding: 2em 0;
+      }
+    }
+    .domains {
+      grid-template-columns: 100%;
+    }
+  }
+}
