@@ -1,0 +1,19 @@
+@import "../../sass/common.scss";
+
+.header-section {
+  background-color: $green-color;
+  .header {
+    width: $universal-width;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    .header__title {
+      font-size: 40px;
+      color: $white-color;
+    }
+    .header__search-bar {
+      align-self: center;
+      padding: 0.5em;
+    }
+  }
+}
