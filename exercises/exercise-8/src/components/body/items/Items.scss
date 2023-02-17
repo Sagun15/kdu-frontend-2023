@@ -3,11 +3,19 @@
   .items__headline {
     margin: 0;
     padding: calc($universal-padding/2) 0;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: $h2-font-size;
+    font-weight: $heading-font-weight;
+  }
+
+  :nth-child(2) {
+    border-top-left-radius: $universal-border-radius;
+    border-top-right-radius: $universal-border-radius;
+  }
+  :last-child {
+    border-bottom-left-radius: $universal-border-radius;
+    border-bottom-right-radius: $universal-border-radius;
   }
 }
-.items:first-child{
-    background-color: black;
+.items:first-child {
+  background-color: black;
 }
-

@@ -14,12 +14,4 @@
         color: $white-color;
         border-radius: $universal-border-radius;
     }
-    &:nth-child(2) {
-        border-top-left-radius: $universal-border-radius;
-        border-top-right-radius: $universal-border-radius;
-    }
-    &:last-child {
-        border-bottom-left-radius: $universal-border-radius;
-        border-bottom-right-radius: $universal-border-radius;
-    }
 }

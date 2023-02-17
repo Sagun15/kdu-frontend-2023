@@ -8,12 +8,16 @@
     display: grid;
     grid-template-columns: repeat(2, 50%);
     .header__title {
-      font-size: 40px;
+      font-size: $h1-font-size;
+      font-weight: $heading-font-weight;
       color: $white-color;
     }
     .header__search-bar {
       align-self: center;
-      padding: 0.5em;
+      padding: $universal-padding;
+      border: $black-color;
+      outline: none;
+      border-radius: $universal-border-radius;
     }
   }
 }
