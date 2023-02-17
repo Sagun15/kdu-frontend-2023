@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2em;
+    .heading {
+        background-color: #f4f4f4;
+    }
+    .add-todo {
+        text-align: center;
+        margin: 1em 0;
+        #add-todo-text {
+            padding: 1em;
+        }
+        #add-todo-submit {
+            padding: 1em 2em;
+        }
+    }
+    .todo-item-section {
+        display: grid;
+        grid-template-columns: 80% 1fr;
+        .todo-item {
+            padding: 1em 2em;
+            background-color: #c4c6c6;
+        }
+        .todo-ctrl-btns {
+            display: inherit;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+            align-items: center;
+            .edit-btn, .remove-btn {
+                padding: 0.2em 0.4em;
+            }
+        }
+    }
+
+}
