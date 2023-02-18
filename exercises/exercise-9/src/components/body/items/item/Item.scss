@@ -1,0 +1,17 @@
+@import "../../../../sass/common.scss";
+.item {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  border: 1px solid rgba($color: #080808, $alpha: 0.1);
+  padding: 0 $universal-padding;
+  .item__close-btn {
+    justify-self: end;
+    align-self: center;
+    background-color: $close-btn;
+    border: 0;
+    width: 2em;
+    height: 2em;
+    color: $white-color;
+    border-radius: $universal-border-radius;
+  }
+}
