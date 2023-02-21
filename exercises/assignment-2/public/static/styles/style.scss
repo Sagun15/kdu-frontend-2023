@@ -1,0 +1,35 @@
+@import "./variables.scss";
+@import "./common.scss";
+
+body {
+    height: 100vh;
+}
+
+.login-section {
+    width: 30%;
+    height: inherit;
+    display: grid;
+    margin: auto;
+    align-content: center;
+  .login-form {
+    display: grid;
+    grid-template-columns: 100%;
+    .login-form__label {
+        font-weight: bold;
+        padding: $universal-padding 0;
+    }
+    .login-form__input {
+        padding: $universal-padding;
+        border: 1px solid $black-color;
+        outline: none;
+    }
+    .login-form__btn {
+        padding: $universal-padding;
+        margin-top: 1em;
+        background-color: $blue-color;
+        border: none;
+        color: $white-color;
+        cursor: pointer;
+    }
+  }
+}
