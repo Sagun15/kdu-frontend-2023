@@ -90,6 +90,7 @@ socket.on("notification", (msg) => {
 
 // Recieve updated users list present online
 socket.on("usersList", ({ users }) => {
+  messages.innerHTML = ''
   outputUsers(users);
 });
 
