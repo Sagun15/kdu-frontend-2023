@@ -1,0 +1,25 @@
+@import "../../common/common.scss";
+
+.container {
+    width: 90%;
+    margin: auto;
+  .headline {
+    text-transform: uppercase;
+    font-size: $heading-size;
+    font-weight: bold;
+    text-align: center;
+  }
+  .headline__design {
+    color: $blue-color;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 21%);
+    justify-content: space-around;
+    .products__not-found {
+      font-size: $heading-size;
+      text-align: center;
+      grid-area: 1 / 1 / span 1 / span 4;
+    }
+  }
+}
