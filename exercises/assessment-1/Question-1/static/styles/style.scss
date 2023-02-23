@@ -1,0 +1,92 @@
+@import "./common.scss";
+
+.container {
+  background-color: $pink-color;
+  color: $white-color;
+  display: grid;
+  font-weight: $font-weight;
+  .header {
+    display: inherit;
+    width: $universal-width;
+    margin: auto;
+    padding: $universal-padding 0;
+    font-size: 22px;
+    grid-template-columns: 60% 40%;
+    .header__links {
+      display: flex;
+      justify-content: space-between;
+    }
+    .hamburger-link {
+        display: none;
+    }
+  }
+  .intro {
+    display: inherit;
+    width: $universal-width;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-template-columns: repeat(2, 50%);
+    .intro__section {
+      display: grid;
+      align-content: center;
+      .intro__section-title {
+        font-size: 60px;
+        .coffee-content::after {
+          content: "\a";
+          white-space: pre;
+        }
+      }
+      .intro__section-description {
+        font-size: 16px;
+        padding: $universal-padding 0;
+      }
+      .btn {
+        width: fit-content;
+        padding: $universal-padding;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: #c1576a;
+        color: $white-color;
+      }
+    }
+    .coffee__mug {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 786px) and (min-width: 576px) {
+  .container {
+    .header {
+      width: 96%;
+      grid-template-columns: 50% 50%;
+    }
+    .intro {
+      width: 96%;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+      .header {
+        .header__link {
+            display: none;
+        }
+        .header__links {
+            display: contents;
+        }
+        .hamburger-link {
+            display: block;
+            justify-self: flex-end;
+        }
+      }
+      .intro {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
