@@ -1,0 +1,36 @@
+.snackbar {
+  color: #eee;
+  padding: 10px;
+  width: fit-content;
+  position: fixed;
+  bottom: 1em;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
+  justify-self: center;
+  font-weight: bold;
+  animation: slide-up 1s ease-out forwards, move-out 1s ease-out 2s forwards;
+}
+.snackbar__success {
+  background-color: #32c957;
+}
+.snackbar__error {
+  background-color: #bd321a;
+}
+
+@keyframes slide-up {
+  from {
+    bottom: -5rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+@keyframes move-out {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -5rem;
+  }
+}

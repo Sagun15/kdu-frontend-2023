@@ -1,0 +1,49 @@
+@import "../../common/common.scss";
+
+.container {
+    width: 90%;
+    margin: auto;
+  .headline {
+    text-transform: uppercase;
+    font-size: $heading-size;
+    font-weight: bold;
+    text-align: center;
+  }
+  .headline__design {
+    color: $blue-color;
+  }
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 21%);
+    justify-content: space-around;
+    .products__not-found {
+      font-size: $heading-size;
+      text-align: center;
+      grid-area: 1 / 1 / span 1 / span 4;
+    }
+  }
+}
