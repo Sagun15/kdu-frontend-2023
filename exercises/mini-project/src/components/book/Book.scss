@@ -1,0 +1,41 @@
+@import "../../common/common.scss";
+
+.booking {
+  width: $universal-width;
+  margin: auto;
+  .booking__title {
+    font-size: $primary-heading-size;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em 0;
+  }
+  .booking__sub-title {
+    color: $grey-color;
+    text-align: center;
+    padding-bottom: 0.5em;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 69% 29%;
+    column-gap: 2%;
+    padding: 1em 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .booking {
+    .container {
+      grid-template-columns: 100%;
+      row-gap: 2em;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .booking {
+    .container {
+      grid-template-columns: 100%;
+      row-gap: 2em;
+    }
+  }
+}

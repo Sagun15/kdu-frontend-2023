@@ -1,0 +1,109 @@
+@import "../../../../common/common.scss";
+
+.timings {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  column-gap: 4%;
+  .timings__title {
+    grid-column: span 2;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    font-weight: bold;
+    border-top: 1px solid $grey-color;
+    border-bottom: 1px solid $grey-color;
+  }
+  .hours {
+    .hours__title {
+      color: $grey-color;
+    }
+    .hours__ctrls {
+      display: grid;
+      grid-template-columns: repeat(3, 33.3%);
+      border: 1px solid $grey-color;
+      border-radius: 5px;
+      margin: 1em 0;
+      .hours__ctrl {
+        background-color: transparent;
+        padding: 0.5em 0;
+        font-size: 18px;
+        border: none;
+        color: $grey-color;
+      }
+      .hours__ctrl:hover {
+        color: $skyblue-color;
+        cursor: pointer;
+      }
+      .hour__inc-ctrl {
+        border-left: 1px solid $grey-color;
+      }
+      .hour__dec-ctrl {
+        border-right: 1px solid $grey-color;
+      }
+      .hours__value {
+        text-align: center;
+        align-self: center;
+        color: $skyblue-color;
+        font-weight: bold;
+      }
+    }
+    .hours__description {
+      color: $grey-color;
+      font-size: 12px;
+    }
+  }
+  .date {
+    .date__title {
+      color: $grey-color;
+    }
+    .date__chooser {
+      width: 100%;
+      margin: 1em 0;
+      padding: 0.5em;
+      font-size: 16px;
+      border: 1px solid $grey-color;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+  }
+  .timing {
+    grid-column: 1 / span 2;
+    .timing__title {
+      color: $grey-color;
+      padding: 1em 0;
+    }
+    .times {
+      display: grid;
+      grid-template-columns: repeat(4, 22%);
+      column-gap: 4%;
+      .time {
+        cursor: pointer;
+        text-align: center;
+        padding: 0.5em 0;
+        border: 1px solid $grey-color;
+        border-radius: 5px;
+        margin-bottom: 0.5em;
+      }
+      .time:hover {
+        filter: $skyblue-filter;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .timings {
+    .hours {
+      grid-column: span 2;
+      margin-bottom: 0.5em;
+    }
+    .date {
+      grid-column: span 2;
+    }
+    .timing {
+      .times {
+        grid-template-columns: 100%;
+      }
+    }
+  }
+}

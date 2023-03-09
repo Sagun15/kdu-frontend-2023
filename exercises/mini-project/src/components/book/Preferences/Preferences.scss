@@ -1,0 +1,80 @@
+@import "../../../common/common.scss";
+
+.booking__preferences {
+  background-color: $white-color;
+  .booking__preferences-title {
+    background-color: $skyblue-color;
+    color: $white-color;
+    font-weight: bold;
+    font-size: $secondary-heading-size;
+    padding: 0.5em;
+  }
+  .booking__preferences__options {
+    padding: 1em;
+    .cleaning-options-title {
+      padding: 0.5em 0;
+      color: $grey-color;
+    }
+    .cleaning-options {
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-gap: 2%;
+      margin-bottom: 1em;
+      .cleaning-option {
+        cursor: pointer;
+        padding: 0.7em 0;
+        border: 1px solid $grey-color;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .cleaning-option:hover {
+        filter: $skyblue-filter;
+      }
+    }
+    .frequency-options {
+      display: grid;
+      grid-template-columns: repeat(4, 22%);
+      column-gap: 4%;
+      padding-bottom: 2em;
+      border-bottom: 1px solid $grey-color;
+      .frequency-options-title {
+        color: $grey-color;
+        padding: 0.5em 0;
+        grid-column: 1 / span 4;
+      }
+      .frequency-option {
+        cursor: pointer;
+        padding: 0.7em 0;
+        border: 1px solid $grey-color;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .frequency-option:hover {
+        filter: $skyblue-filter;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .booking__preferences {
+    .booking__preferences__options {
+      .cleaning-options {
+        grid-template-columns: 100%;
+        row-gap: 1em;
+      }
+      .frequency-options {
+        row-gap: 1em;
+      .frequency-option {
+        grid-column: span 4;
+      }
+    }
+    }
+  }
+}
