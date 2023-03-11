@@ -1,0 +1,11 @@
+{
+  "HostName": "dell-Latitude-7490",
+  "OperatingSystem": "Linux",
+  "Architecture": "x64",
+  "OSrelease": "5.15.0-58-generic",
+  "Uptime": 384072.88,
+  "CPUcores": 8,
+  "TotalMemory": 16650842112,
+  "FreeMemory": 7509295104,
+  "CurrentDirectory": "/home/dell/Frontend/Exercise-6"
+}
