@@ -1,0 +1,21 @@
+@import "../../../common/common.scss";
+
+.item {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    background-color: $white-color;
+    margin-bottom: 5%;
+    padding: 2em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    align-content: center;
+    text-align: center;
+    .item__img {
+        max-width: 100%;
+        max-height: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+    .item__details {
+        align-self: center;
+    }
+}
