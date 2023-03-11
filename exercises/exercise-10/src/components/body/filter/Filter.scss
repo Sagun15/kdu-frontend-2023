@@ -1,0 +1,9 @@
+.filter__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    width: fit-content;
+    .filter__by, .sort__by {
+        display: grid;
+    }
+}
