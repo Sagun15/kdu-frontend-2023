@@ -53,7 +53,8 @@ export const RoomType = () => {
               borderColor: "#f08a5d",
               color: "#f08a5d",
               borderRadius: 0,
-              marginBottom: isSmallerScreen ? 4 : 0
+              marginBottom: isSmallerScreen ? 4 : 0,
+              width: isSmallerScreen ? '100%' : 'initial'
             }}
             className={roomType === room.name ? "selected" : ""}
             onClick={() => roomHandler(room.name, room.costPerNight)}

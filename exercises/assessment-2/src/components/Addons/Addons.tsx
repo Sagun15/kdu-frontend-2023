@@ -80,7 +80,8 @@ export const Addons = () => {
                   borderColor: "#f08a5d",
                   color: "#f08a5d",
                   borderRadius: 0,
-                  marginBottom: isSmallerScreen ? 4 : 0
+                  marginBottom: isSmallerScreen ? 4 : 0,
+                  width: isSmallerScreen ? '100%' : 'initial'
                 }}
                 className={addOns.includes(addOn.name) ? 'selected' : ''}
                 onClick={() => updateAddons(addOn.name, addOn.cost)}
