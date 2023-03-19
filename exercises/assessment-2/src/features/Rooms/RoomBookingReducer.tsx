@@ -25,20 +25,25 @@ export const roomBookingAsync = createAsyncThunk(
     let addOnRate = 0;
     const roomAmount = parseInt(bookingDetails.roomType.rate, 10);
     bookingDetails.addOns.map((addOn) => (addOnRate += parseInt(addOn.rate)));
-    const taxAmount = (roomAmount + addOnRate) * 0.18;
     console.log("Room type: ", bookingDetails.roomType.type);
     console.log("Room rate: ", roomAmount);
     console.log("AddOns: ", bookingDetails.addOns);
     console.log("AddOn amount: ", addOnRate);
-    console.log(
-      "Tax rate (" + roomAmount + " + " + addOnRate + ") * 0.18 :",
-      taxAmount
-    );
+    const date1 = new Date(bookingDetails.startDate).getTime();
+    const date2 = new Date(bookingDetails.endDate).getTime();
+    const diffTime = Math.abs(date2 - date1);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     console.log(
       "Start date: " +
         bookingDetails.startDate +
         " End date: " +
         bookingDetails.endDate
+    );
+    console.log("No. of days: ", diffDays);
+    const taxAmount = (roomAmount + addOnRate) * diffDays * 0.18;
+    console.log(
+      "Tax rate (" + roomAmount + " + " + addOnRate + ") * " + diffDays + " * 0.18 :",
+      taxAmount
     );
     let totalAmount = roomAmount + addOnRate + taxAmount;
     console.log("Total amount: ", totalAmount);
@@ -54,7 +59,7 @@ export const roomBookingSlice = createSlice({
       action: PayloadAction<{ key: string; value: string | string[] | {} }>
     ) => {
       state[action.payload.key] = action.payload.value;
-    }
+    },
   },
 });
 

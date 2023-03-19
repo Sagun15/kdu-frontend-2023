@@ -36,7 +36,7 @@ export const DateSelector = () => {
       <Stack direction="row" spacing={2}>
         <input
           type="date"
-          min={new Date().toISOString()}
+          min={new Date().toISOString().substring(0,10)}
           className="date__picker"
           onChange={(e) => updateState("startDate", e.target.value)}
         />
