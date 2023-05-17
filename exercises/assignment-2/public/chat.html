@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./static/styles/chat.css" />
+  </head>
+  <body class="app">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <aside class="sidebar">
+      <p class="posts-btn sidebar-btns active">Posts</p>
+      <p class="online-btn sidebar-btns">Currently Online</p>
+    </aside>
+    <main class="container">
+      <section class="posts-section">
+        <div class="posts"></div>
+        <div class="post__add-menu">
+          <div class="post__add">
+            <input
+              class="post__add-title post__add-feature"
+              type="text"
+              placeholder="Post Title"
+            />
+            <textarea
+              rows="2"
+              placeholder="Post Description"
+              class="post__add-description post__add-feature"
+            ></textarea>
+          </div>
+          <input class="post__add-btn" type="button" value="Add Post" />
+        </div>
+      </section>
+      <section class="chats-section">
+        <div class="members"></div>
+        <div class="chat">
+          <div class="messages hidden"></div>
+          <div class="chat__add">
+            <textarea
+              rows="5"
+              placeholder="Message"
+              class="chat__add-message"
+            ></textarea>
+          </div>
+        </div>
+        <input class="chat__send-btn" type="button" value="Send" />
+      </section>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"
+      integrity="sha512-/l6vieC+YxaZywUhmqs++8uF9DeMvJE61ua5g+UK0TuHZ4TkTgB1Gm1n0NiA86uEOM9JJ6JUwyR0hboKO0fCng=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="./static/js/chat.js" async defer></script>
+  </body>
+</html>
