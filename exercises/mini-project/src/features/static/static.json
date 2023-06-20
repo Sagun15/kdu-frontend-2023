@@ -1,0 +1,55 @@
+{
+  "cleaning_type": [
+    { "rate": 500, "type": "Standard" },
+    { "rate": 1000, "type": "Deep" },
+    { "rate": 1200, "type": "Move In/Out" }
+  ],
+  "cleaning_frequency": [
+    { "type": "One Time", "rate": 2000 },
+    { "type": "Weekly", "rate": 2500 },
+    { "type": "BI-Weekly", "rate": 2200 },
+    { "type": "Monthly", "rate": 1900 }
+  ],
+  "time_slots": [
+    "7:00 AM",
+    "8:00 AM",
+    "1:00 PM",
+    "2:00 PM",
+    "3:00 PM",
+    "6:00 PM",
+    "7:00 PM",
+    "8:00 PM"
+  ],
+  "extras": [
+    {
+      "rate": 50,
+      "url": "https://cdn-icons-png.flaticon.com/512/395/395596.png",
+      "type": "clean oven"
+    },
+    {
+      "rate": 100,
+      "url": "https://cdn-icons-png.flaticon.com/512/2851/2851908.png",
+      "type": "clean fridge"
+    },
+    {
+      "rate": 50,
+      "url": "https://cdn-icons-png.flaticon.com/512/2236/2236584.png",
+      "type": "ironing"
+    },
+    {
+      "rate": 100,
+      "url": "https://cdn-icons-png.flaticon.com/512/2946/2946623.png",
+      "type": "clean windows"
+    }
+  ],
+  "room_type": [
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/2284/2284001.png",
+      "type": "Bedrooms"
+    },
+    {
+      "image": "https://cdn-icons-png.flaticon.com/512/2933/2933784.png",
+      "type": "Washrooms"
+    }
+  ]
+}

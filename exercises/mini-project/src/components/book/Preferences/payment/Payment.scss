@@ -1,0 +1,123 @@
+@import "../../../../common/common.scss";
+
+.payments__section {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  column-gap: 4%;
+  .payments__section-header {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 1em 0;
+    align-items: center;
+    border-top: 1px solid $grey-color;
+    border-bottom: 1px solid $grey-color;
+    .img__logo {
+      display: flex;
+      align-items: center;
+      filter: invert(63%) sepia(34%) saturate(586%) hue-rotate(51deg)
+        brightness(100%) contrast(93%);
+      padding: 0.5em;
+      border: 2px solid #404040;
+      border-radius: 10px;
+      font-size: 12px;
+      .payment__logo {
+        width: 40px;
+        margin-right: 0.5em;
+      }
+    }
+  }
+  .card__details-title {
+    grid-column: span 4;
+    color: $grey-color;
+    padding: 0.5em 0;
+  }
+  .payment__form {
+    display: contents;
+    .card-input {
+      padding: 0.5em;
+      margin: 0.5em 0;
+      border: 1px solid $grey-color;
+      border-radius: 5px;
+    }
+    .card__number {
+      grid-column: span 4;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .card__holder-name {
+      grid-column: span 2;
+    }
+    .personal__details-title {
+      grid-column: span 4;
+      color: $grey-color;
+      padding: 0.5em 0;
+      margin-top: 1em;
+    }
+    .personal__email {
+      grid-column: span 2;
+    }
+    .personal__phone {
+      grid-column: span 2;
+    }
+    .personal__address {
+      grid-column: span 3;
+    }
+    .terms__conditions {
+      grid-column: span 4;
+      margin: 0.5em 0;
+      .check-box {
+        margin-right: 0.5em;
+      }
+      .terms-link {
+        text-decoration: none;
+      }
+    }
+    .booking__btn {
+      display: contents;
+      .book-btn {
+        grid-column: span 4;
+        color: $white-color;
+        font-weight: bold;
+        font-size: $secondary-heading-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        .lock__icon {
+          padding: 0.5em;
+          filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(205deg)
+            brightness(108%) contrast(100%);
+        }
+      }
+      .book__enabled-btn {
+        background-color: #98cc59;
+      }
+      .book__disabled-btn {
+        background-color: $grey-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .payments__section {
+    .payments__section-header {
+      display: block;
+      .headline {
+        margin-bottom: 0.5em;
+      }
+    }
+    .payment__form {
+      .card-input,
+      .card__holder-name,
+      .personal__email,
+      .personal__phone,
+      .personal__address {
+        grid-column: span 4;
+      }
+    }
+  }
+}

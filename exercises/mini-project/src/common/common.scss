@@ -1,0 +1,14 @@
+
+$skyblue-color: #6ac0d0;
+$light-skyblue-color: #f8fbfc;
+$white-color: #fff;
+$light-white-color: #eee;
+$grey-color: #aaa7a7;
+$primary-heading-size: 32px;
+$secondary-heading-size: 22px;
+$universal-width: 70%;
+$skyblue-filter: invert(68%) sepia(31%) saturate(556%) hue-rotate(142deg) brightness(99%) contrast(84%);
+
+.selected {
+    filter: $skyblue-filter;
+}

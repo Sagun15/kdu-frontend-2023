@@ -1,0 +1,73 @@
+@import "../../common/common.scss";
+
+#header-container {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 5rem;
+  background-color: $white-color;
+  border-bottom: 1px solid $light-white-color;
+  #site-logo {
+    display: flex;
+    justify-content: space-between;
+    width: $universal-width;
+    margin: auto;
+    .site-title {
+      align-self: center;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      .btn {
+        margin-right: 1.2em;
+        padding: 0.5em;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        color: $white-color;
+        font-weight: bold;
+      }
+      .view__bookings-btn {
+        background-color: $skyblue-color;
+      }
+      .sign__out-btn {
+        background-color: #565f60;
+      }
+    }
+    .contact {
+      font-size: $secondary-heading-size;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #header-container {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #header-container {
+    #site-logo {
+      .info {
+        justify-items: flex-end;
+        display: grid;
+        .view__bookings-btn {
+          margin-right: 0;
+        }
+        .sign__out-btn {
+          margin-right: 0;
+          justify-items: end;
+        }
+        .contact {
+          font-size: 16px;
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
+}

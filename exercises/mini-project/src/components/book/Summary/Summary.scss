@@ -1,0 +1,43 @@
+@import "../../../common/common.scss";
+
+.booking__summary {
+  background-color: $white-color;
+  position: sticky;
+  top: 5rem;
+  height: fit-content;
+  .booking__summary-title {
+    font-weight: bold;
+    color: $white-color;
+    background-color: $skyblue-color;
+    padding: 0.5em;
+    font-size: $secondary-heading-size;
+  }
+  .summary__details {
+    padding: 1em;
+    .summary__detail {
+      display: flex;
+      align-items: center;
+      padding: 0.5em 0;
+      filter: invert(77%) sepia(3%) saturate(165%) hue-rotate(314deg)
+        brightness(88%) contrast(85%);
+      .icon {
+        padding-right: 0.5em;
+        height: fit-content;
+      }
+    }
+    .location__info {
+      border-bottom: 1px solid $grey-color;
+    }
+  }
+  .total__cost {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em 1em;
+    font-weight: bold;
+    align-items: center;
+    .total__cost-amt {
+      color: $skyblue-color;
+      font-size: $secondary-heading-size;
+    }
+  }
+}

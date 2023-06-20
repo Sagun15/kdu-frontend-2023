@@ -1,0 +1,114 @@
+@import "../../../../common/common.scss";
+
+.booking__home-options {
+  padding: 0 1em;
+  .booking__home-title {
+    font-weight: 500;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $grey-color;
+  }
+  .room__options {
+    display: grid;
+    padding: 1em 0;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 4%;
+    .room-option {
+      display: grid;
+      text-transform: uppercase;
+      border: 1px solid $grey-color;
+      .room-img {
+        justify-self: center;
+        padding: 0.5em 0;
+        filter: invert(71%) sepia(1%) saturate(457%) hue-rotate(314deg) brightness(95%) contrast(89%);
+      }
+      .room__option-title {
+        width: 100%;
+        padding: 0.5em 0;
+        text-align: center;
+        color: $grey-color;
+        border-bottom: 1px solid $grey-color;
+      }
+      .room__option-ctrls {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 33.3%);
+        .quantity {
+          justify-self: center;
+          color: $skyblue-color;
+          font-weight: bold;
+        }
+        .ctrl-btn {
+          cursor: pointer;
+          border: none;
+          background-color: transparent;
+          font-size: 18px;
+          padding: 0.2em;
+          color: $grey-color;
+        }
+        .ctrl-btn:hover {
+          color: $skyblue-color;
+        }
+        .increase__ctrl-btn {
+          border-left: 1px solid $grey-color;
+        }
+        .decrease__ctrl-btn {
+          border-right: 1px solid $grey-color;
+        }
+      }
+    }
+  }
+  .extra__title {
+    color: $grey-color;
+    padding: 0.5em 0;
+  }
+  .extra__options {
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    column-gap: 4%;
+    padding: 1em 0;
+    .extra__option {
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+      color: $grey-color;
+      padding: 1em 0;
+      border: 1px solid $grey-color;
+      border-radius: 5px;
+      .extra__option-img {
+        width: 64px;
+        filter: invert(71%) sepia(1%) saturate(457%) hue-rotate(314deg) brightness(95%) contrast(89%);
+      }
+    }
+    .extra__option:hover {
+      filter: $skyblue-filter;
+    }
+  }
+  .additional__requisites {
+    color: $grey-color;
+    padding-bottom: 1em;
+    .optional {
+      font-style: italic;
+      color: rgb(214, 211, 211);
+    }
+  }
+  .optional__req {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $grey-color;
+    outline: none;
+    border-radius: 5px;
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .booking__home-options{
+    .room__options {
+      grid-template-columns: 100%;
+    }
+    .extra__options {
+      grid-template-columns: 100%;
+      row-gap: 0.5em;
+    }
+  }
+}
